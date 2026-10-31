@@ -1,59 +1,80 @@
-# Frontproject
+<div align="center">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
+# OPD Management System
 
-## Development server
+An Angular application foundation for outpatient department workflows.
 
-To start a local development server, run:
+</div>
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## About
 
-## Code scaffolding
+The **OPD Management System** is the starting point for a web application focused on outpatient department services. The project is built with Angular 19 and currently includes scaffolded components for patient and doctor sign-in, registration, services, feedback, and a home page.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+> **Project status:** This is an early-stage frontend scaffold. The listed pages are placeholders; routes, working user flows, and backend integrations have not been implemented yet.
 
-```bash
-ng generate component component-name
-```
+## Technology
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+| Area | Technology |
+| --- | --- |
+| Frontend framework | Angular 19 |
+| Language | TypeScript |
+| Reactive programming | RxJS |
+| Unit testing | Jasmine and Karma |
 
-```bash
-ng generate --help
-```
+## Getting started
 
-## Building
+### Requirements
 
-To build the project run:
+- Node.js and npm versions supported by Angular 19
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Install dependencies
 
 ```bash
-ng test
+npm ci
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Run locally
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open [http://localhost:4200](http://localhost:4200) in your browser. The development server watches for source changes and reloads the application.
 
-## Additional Resources
+## Available commands
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| Command | Purpose |
+| --- | --- |
+| `npm start` | Start the local Angular development server. |
+| `npm run build` | Create a production build in `dist/`. |
+| `npm run watch` | Build in development mode and rebuild on changes. |
+| `npm test` | Run unit tests with Karma. |
+
+## Project structure
+
+```text
+src/
+├── app/
+│   ├── doctorlogin/    Doctor sign-in component
+│   ├── feedback/       Feedback component
+│   ├── home/           Home page component
+│   ├── login/          Patient sign-in component
+│   ├── ourservices/    Services component
+│   ├── register/       Registration component
+│   └── app.routes.ts   Route configuration
+└── index.html          Application entry page
+```
+
+## Contributing
+
+1. Create a branch for your change.
+2. Install dependencies with `npm ci`.
+3. Make and verify your changes with `npm run build` and, where applicable, `npm test`.
+4. Open a pull request describing the change.
+
+## Resources
+
+- [Angular documentation](https://angular.dev/overview)
+- [Angular CLI reference](https://angular.dev/tools/cli)
